@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Reports">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/orange"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        style="bold"
+        android:text="Reports"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_back"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:id="@+id/tvTotalEmp"
+        style="bold"
+        android:text="Total Employees"></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_back"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:id="@+id/tvTotalOrders"
+        style="bold"
+        android:text="Total Orders"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_back"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:id="@+id/tvTotalIncome"
+        style="bold"
+        android:text="Total Income Generated"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_back"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:id="@+id/tvTotalProducts"
+        style="bold"
+        android:text="Total Products in Stock"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_back"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:id="@+id/tvTotalPurchases"
+        style="bold"
+        android:text="Total Purchases"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_back"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:id="@+id/tvTotalExpenses"
+        style="bold"
+        android:text="Total Expenses"></TextView>
+
+</LinearLayout>

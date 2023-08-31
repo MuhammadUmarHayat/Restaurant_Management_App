@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".AddPOS">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        style="bold"
+        android:id="@+id/tvPOSTitle1"
+        android:textAlignment="center"
+        android:text="Point Of Sale">
+    </TextView>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1">
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:hint="Select Category"
+               style="bold"
+                android:textColor="@color/orange"
+                android:layout_column="0"></TextView>
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                android:hint="Select Sub Category"
+                style="bold"
+
+                android:layout_column="0"></TextView>
+            <Spinner
+                android:id="@+id/spinnersubCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/orange"
+                android:hint="Select Product"
+                style="bold"
+
+                android:layout_column="0"></TextView>
+            <Spinner
+                android:id="@+id/spinnerProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:hint="Enter unit/ size"
+                style="bold"
+                android:textColor="@color/orange"
+                android:layout_column="0"></TextView>
+            <EditText
+                android:id="@+id/etpostSize1"
+                android:hint="Enter size"
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:hint="Enter Quantity"
+                style="bold"
+                android:textColor="@color/orange"
+                android:layout_column="0"></TextView>
+            <EditText
+                android:id="@+id/etpostQty1"
+                android:hint="Enter Qty"
+                style="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                />
+        </TableRow>
+        <TableRow>
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Calculate Bill"
+                android:id="@+id/btnPOsCalBill"
+                style="bold"
+                android:textColor="@color/white"
+                android:layout_column="0"></Button>
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+android:id="@+id/tvPOSTotal1"
+                android:text="0"
+                style="bold"
+                android:textColor="@color/orange"
+                android:layout_column="1"></TextView>
+
+        </TableRow>
+        <TableRow>
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+android:id="@+id/etPOSCustomerName1"
+             android:hint="Customer Name"
+                style="bold"
+                android:textColor="@color/orange"
+                android:layout_column="0"></EditText>
+
+
+            <EditText android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPOSCustomerOrderNo"
+
+                style="bold"
+                android:textColor="@color/orange"
+                android:layout_column="0"></EditText>
+
+        </TableRow>
+        <TableRow>
+
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Add to Cart"
+                android:id="@+id/btnAddcartPOS"
+                style="bold"
+                android:textColor="@color/white"
+                android:layout_column="0"></Button>
+            <Button
+                android:id="@+id/btncheckoutPOS"
+                style="bold"
+
+                android:layout_width="156dp"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="Checkout"
+                android:textColor="@color/white"></Button>
+
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

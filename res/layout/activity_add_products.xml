@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProducts">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:text="Add Product"
+        android:textColor="@color/white"
+        android:textAlignment="center"></TextView>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1,2">
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <EditText
+            android:id="@+id/etPName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:hint="Prodcut name" />
+        <EditText
+            android:id="@+id/etPsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:hint="Prodcut size"
+            />
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <EditText
+            android:id="@+id/etPCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:hint="Category" />
+        <EditText
+            android:id="@+id/etPSubCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:hint="Sub category"
+            />
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <EditText
+            android:id="@+id/etPbrande"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:hint="Brand Name" />
+        <EditText
+            android:id="@+id/etPSupplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:hint="Supplier Name"
+            />
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:id="@+id/photo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:src="@drawable/cake"></ImageView>
+        <EditText
+            android:id="@+id/etPQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:hint="Quantity"
+            />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <EditText
+            android:id="@+id/etPPurchasePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:hint="Enter Purchase Price" />
+        <EditText
+            android:id="@+id/etPSalePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:hint="Enter Sale Price"
+            />
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <EditText
+            android:id="@+id/etPPurchaseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_column="1"
+            android:hint="Enter Purchase Date" />
+
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <Button
+            android:id="@+id/btnSaveProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:text="Save"
+             />
+        <Button
+            android:id="@+id/btnbackProductsad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:text="Save"
+            />
+
+
+    </TableRow>
+
+</TableLayout>
+</LinearLayout>

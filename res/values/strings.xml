@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Restaurant Management App</string>
+    <string-array name="users">
+        <item>admin</item>
+        <item>manager</item>
+        <item>cashier</item>
+        <item>worker</item>
+    </string-array>
+</resources>
